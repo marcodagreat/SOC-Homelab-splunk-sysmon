@@ -6,6 +6,8 @@ This phase focused on building centralized visibility across the homelab environ
 
 The objective was to simulate enterprise-style endpoint monitoring and validate that telemetry from multiple systems was successfully ingested into the SIEM for future detection engineering and attack simulation phases.
 
+<img width="1536" height="1024" alt="ChatGPT Image May 19, 2026, 09_44_53 AM" src="https://github.com/user-attachments/assets/b356a843-7506-4883-b696-661dd1079067" />
+
 ---
 
 ## Lab Architecture
