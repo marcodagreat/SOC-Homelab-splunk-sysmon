@@ -302,3 +302,8 @@ The next phase of the project will focus on:
 * Incident response scenarios
 * Blue Team analysis workflows
 
+---
+
+🔐 Learning cybersecurity through building, attacking, and defending systems.
+
+---
