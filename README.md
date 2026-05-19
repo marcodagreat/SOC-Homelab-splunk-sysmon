@@ -8,6 +8,28 @@ The objective was to simulate enterprise-style endpoint monitoring and validate 
 
 ---
 
+## Lab Architecture
+
+This SOC homelab consists of:
+- Windows Server 2022 Active Directory
+- Windows 11 Endpoint
+- Ubuntu Linux Syslog Server
+- Splunk Enterprise SIEM
+- MikroTik segmented network environment
+- Kali Linux attack system
+
+The lab is segmented into Blue Team and Red Team networks for future attack simulation and detection engineering.
+# Network Overview
+
+| System              | Role                               | IP Address  |
+| ------------------- | ---------------------------------- | ----------- |
+| Splunk Server       | SIEM Platform                      | 10.20.20.30 |
+| Windows Server 2022 | Active Directory Domain Controller | 10.10.10.12 |
+| Windows 11          | Domain Joined Endpoint             | 10.10.10.x  |
+| Ubuntu Server       | Linux Syslog Endpoint              | 10.20.20.10 |
+
+---
+
 # Technologies Used
 
 * Splunk Enterprise
@@ -36,14 +58,17 @@ The objective was to simulate enterprise-style endpoint monitoring and validate 
 
 ---
 
-# Network Overview
+## Skills Demonstrated
 
-| System              | Role                               | IP Address  |
-| ------------------- | ---------------------------------- | ----------- |
-| Splunk Server       | SIEM Platform                      | 10.20.20.30 |
-| Windows Server 2022 | Active Directory Domain Controller | 10.10.10.12 |
-| Windows 11          | Domain Joined Endpoint             | 10.10.10.x  |
-| Ubuntu Server       | Linux Syslog Endpoint              | 10.20.20.10 |
+- SIEM Administration
+- Sysmon Configuration
+- Windows Event Forwarding
+- Linux Syslog Monitoring
+- Active Directory Administration
+- Endpoint Telemetry Analysis
+- Splunk Search Processing Language (SPL)
+- Network Segmentation
+- Log Validation & Troubleshooting
 
 ---
 
@@ -290,18 +315,32 @@ This phase establishes the foundation for:
 
 ---
 
-# Next Phase
+## Lessons Learned
 
-The next phase of the project will focus on:
+- Learned how endpoint telemetry differs between Windows and Linux systems
+- Improved troubleshooting skills while validating forwarding issues
+- Gained experience configuring Sysmon operational logging
+- Learned how centralized logging improves visibility across segmented environments
 
-* Attack simulation
-* Adversary emulation
-* Detection engineering
-* Splunk alerting
-* Threat hunting
-* Incident response scenarios
-* Blue Team analysis workflows
+  ---
+  
+## Future Improvements
 
+The next phase of this SOC homelab will focus on expanding detection and blue team capabilities through attack simulation and adversary emulation.
+
+Planned enhancements include:
+
+- Attack simulation using Kali Linux
+- Adversary emulation exercises
+- Detection engineering with custom SPL queries
+- Splunk dashboards and alerting
+- Brute-force attack detection
+- PowerShell attack monitoring
+- Incident response workflows
+- Threat hunting exercises
+- Snort IDS integration
+- Blue Team analysis workflows
+  
 ---
 
 🔐 Learning cybersecurity through building, attacking, and defending systems.
